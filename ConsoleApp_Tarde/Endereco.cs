@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp_Tarde
 {
-    internal class Endereco
+    public class Endereco
     {
         private int Id;
         private string Cep;
@@ -23,6 +24,18 @@ namespace ConsoleApp_Tarde
             Numero = numero;
             Bairro = bairro;
             Cidade = cidade;
+        }
+
+        public void AtualizarEndereco(string rua, int numero, string bairro)
+        {
+            setBairro(bairro);
+            setNumero(numero);
+            setRua(rua);
+        }
+
+        public string EnderecoCompleto()
+        {
+            return "Rua " + Rua + ", N° " + Numero + " Bairro " + Bairro + " Cidade: " + Cidade;
         }
 
         public int getId() 
