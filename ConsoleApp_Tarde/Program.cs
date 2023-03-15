@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp_Tarde;
-
-
+using ConsoleApp_Tarde.Herenca;
 
 Produto p1 = new Produto(1, "Mouse xing ling", 10.90M);
 Produto p2 = new Produto(2, "Teclado multilaser", 20.90M);
@@ -35,6 +34,25 @@ c1.getEndereco().setRua("Prudente de Morais");
 Console.WriteLine(c1.getEndereco().EnderecoCompleto()   );
 c1.getEndereco().AtualizarEndereco("Julio de Moraes", 585, "Portal Itamaraca");
 Console.WriteLine(c1.getEndereco().EnderecoCompleto()   );
+
+Carro car = new Carro();
+car.cor = "Vermelho";
+car.quantidadedeRodas = 4;
+car.quantidadedeAssentos = 5;
+car.TemMotor = true;
+
+Bike bicicleta = new Bike();
+bicicleta.cor = "Azul";
+bicicleta.quantidadedeRodas = 2;
+bicicleta.quantidadedeAssentos = 1;
+bicicleta.TemMotor = false;
+
+Aviao airplane = new Aviao();
+airplane.cor = "Branco";
+airplane.quantidadedeRodas = 18;
+airplane.quantidadedeAssentos = 340;
+airplane.TemMotor = true;
+
 
 
 
