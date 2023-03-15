@@ -54,6 +54,20 @@ airplane.quantidadedeAssentos = 340;
 airplane.TemMotor = true;
 
 
+List<Veiculo> veiculoLista = new List<Veiculo>();
+
+veiculoLista.Add(car);
+veiculoLista.Add(airplane);
+veiculoLista.Add(bicicleta);
+
+foreach (var item in veiculoLista)
+{
+    Console.WriteLine(item.ExibirDados());
+}
+
+Console.WriteLine("Qtd itens da Lista" + veiculoLista.Count);
+
+
 
 
 
