@@ -15,7 +15,14 @@ namespace ConsoleApp_Tarde.Herenca
 
         public string ExibirDados()
         {
-            return cor + " " + quantidadedeRodas + " " + quantidadedeRodas;
+            if (TemMotor)
+            {
+                return "Tem motor" + cor + " " + quantidadedeRodas + " " + quantidadedeRodas;
+            }
+            else
+            {
+                return cor + " " + quantidadedeRodas + " " + quantidadedeRodas;
+            }
         }
     }
 }
