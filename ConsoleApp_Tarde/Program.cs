@@ -67,6 +67,37 @@ foreach (var item in veiculoLista)
 
 Console.WriteLine("Qtd itens da Lista" + veiculoLista.Count);
 
+Random rand = new Random();
+
+List<Produto> produtoLista = new List<Produto>();
+List<Cliente> clienteLista = new List<Cliente>();
+
+for (int i=0;i<500;i++)
+{
+    int aux = 0;
+    aux = 1 * 10;
+    Produto p = new Produto(i, "Teste", aux);
+    produtoLista.Add(p);
+}
+
+
+for (int i = 0; i < 250; i++)
+{
+    int aux = i * 3;    
+    Cliente c = new Cliente(aux, "Fernando", "123456" , e1);
+    clienteLista.Add(c);
+}
+
+foreach (var item in produtoLista)
+{
+    Console.WriteLine(item.ProdutoCompleto());
+}
+
+foreach (var item in clienteLista)
+{
+    Console.WriteLine(item.ClienteCompleto());
+}
+
 
 
 

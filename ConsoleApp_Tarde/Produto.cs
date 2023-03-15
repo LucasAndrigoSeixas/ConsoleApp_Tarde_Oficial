@@ -51,6 +51,11 @@ namespace ConsoleApp_Tarde
                 Valor = valor;
             }
         }
+
+        public string ProdutoCompleto()
+        {
+            return "ID: " + Id + " Descrição: " + Descricao + " Valor: R$" + Valor;
+        }
     }
 }
 
